@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW8 - Ex4</title>
+  <style>
+    table {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: 50%;
+      margin-top: 20px;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: lightgray;
+    }
+  </style>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <h2>Sample Form</h2>
+  <form id="myForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br>
+
+    <label for="paymentType">Payment Type:</label>
+    <select id="paymentType" name="paymentType"> 
+        <option value="cash">Cash</option>
+        <option value="creditCard">Credit Card</option>
+        <option value="googlePay">Google Pay</option>
+        <option value="applePay">Apple Pay</option>
+    </select><br> 
+
+    <label for="promotions">Sign me up for special promotions:</label>
+    <input type="checkbox" id="promotions" name="promotions"><br>
+
+    <label for="location">Preferred Location:</label>
+    <select id="location" name="location">
+      <option value="losAngeles">Los Angeles</option>
+      <option value="orangeCounty">Orange County</option>
+      <option value="riverside">Riverside</option>
+      <option value="sanDiego">San Diego</option>
+  </select><br>
+
+    <button type="submit">Submit</button>
+    <button type="cancel">Cancel</button>
+</form>
+
+  <h2>Key/Value Pairs</h2>
+  <table id="formDataTable">
+    <thead>
+        <tr>
+            <th>Key</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+  <script src="../js/ex4.js"></script>
+</body>
+
+</html> 

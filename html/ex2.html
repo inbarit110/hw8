@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW8 - Ex2</title>
+  <title>GitHub Profile</title>
+  <style>
+    table {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: 50%;
+      margin-bottom: 20px;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      padding: 8px;
+      font-family: Calibri, sans-serif;
+    }
+
+    th {
+      background-color: lightgray;
+    }
+  </style>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <h2>Information about a GitHub user</h2>
+  <div class="container">
+    <h1>GitHub Profile Viewer</h1>
+    <input type="text" id="usernameInput" placeholder="Enter GitHub username">
+    <button onclick="getUserInfo()">Get Profile</button>
+    <div id="profileInfo">
+      <img id="profilePic" src="" alt="Profile Picture">
+      <table>
+        <tr>
+          <th>Name:</th>
+          <td id="userName"></td>
+        </tr>
+        <tr>
+          <th>Blog:</th>
+          <td id="userBlog"></td>
+        </tr>
+        <tr>
+          <th>Account Created:</th>
+          <td id="userCreated"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script src="../js/ex2.js"></script>
+</body>
+
+</html>
